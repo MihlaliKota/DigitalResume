@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+/*Fonts for the text*/
+p,h1,h2,h3,li {
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Background Image*/
+body {
+    background: url(/images/circle-scatter-haikei.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+/*Border for each section*/
+#about,#education,#experience,#skills,#contact {
+    border: solid #A7233A 10px;
+    border-style: groove;
+    margin: 2em;
+    padding: 2em;
+}
+
+/*Image*/
+img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #A7233A;
+    border-radius: 100%;
+    display: block;
+}
+
+/*Navigation Bar*/
+#topnavbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A7233A;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#topnavbar li a {
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#topnavbar li a:hover {
+    background-color: #001122;
+}
+
+/*Back to top button*/
+#back-to-top > button{
+    background-color: #A7233A;
+    border-radius: 50%;
+    border: solid 1px #A7233A;
+    width: 50px;
+    height: 50px;
+}
+#back-to-top:hover > button {
+    border: solid 1px #A7233A;
+    background-color: white;
+    
+}
+#back-to-top > button {
+    text-decoration: none;
+    color: whitesmoke;
+}
+#back-to-top:hover > button {
+    text-decoration: none;
+    color: #A7233A;
+}
+
+#back-to-top {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+/*Hero Image*/
+.hero-image {
+    position: relative;
+    background-image: url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    background-color: gray;
+    border: 6px solid rgb(94, 93, 93);
+    padding: 2rem 2rem;
+    margin: 1rem 1rem;
+}
+
+/*Social Media Links*/
+.social-buttons {
+    display: grid;
+    grid-template-columns: 100px 100px; 
+    padding: 20px;
+}
+
+.linkedin {
+    margin: 10px;
+}
+
+.github {
+    margin: 10px;
+}
+
+/*Media Queries for responsiveness*/
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+       font-size: 20px;
+    }
+}
